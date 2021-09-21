@@ -1,0 +1,125 @@
+@use '../../_sass/variable'as *;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $Link_color;
+  transition: .3s;
+  display: inline-block;
+  &:hover{
+     color: $bg_red;
+  }
+}
+img {
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $Title_color;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4{
+  font-size: 1.7rem;
+}
+p {
+  color: $Text_color;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: .3s;
+  &.blue {
+    background-color: $bg_blue;
+    &:hover{
+        border: 1px solid $bg_blue;
+        background-color: transparent;
+        color: $bg_blue;
+    }
+  }
+  &.red {
+    background-color: $bg_red;
+    &:hover{
+        border: 1px solid $bg_red;
+        background-color: transparent;
+        color: $bg_red;
+    }
+  }
+  &.light {
+    background-color: #f7f7f7;
+    color: #222;
+    margin: 0 0 0 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      &:hover{
+          box-shadow:none; 
+          background-color: transparent;
+          border: 1px solid $Text_color;
+          color: $Text_color;
+      }
+  }
+}
+.bg_shape{
+    position: absolute;
+    width: 48rem;
+    height: 35rem;
+    top: 26rem;
+    right: 0;
+    background-color: $bg_blue;
+    border-bottom-left-radius: 50%;
+    z-index: -1;
+    &.left{
+        left: 0;
+        top: 38rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 50%;
+    }
+  }
+
+  .title {
+    max-width: 50rem;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 3rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
