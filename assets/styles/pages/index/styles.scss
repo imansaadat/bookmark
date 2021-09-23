@@ -13,6 +13,7 @@
       top: 2.5rem;
       right: 2rem;
       display: none;
+      cursor: pointer;
       .bar {
         width: 100%;
         position: relative;
@@ -394,14 +395,19 @@
         display: block;
         .bar {
           transition: 0.5s ease-in-out;
+          &:nth-child(2){
+            width: 100%;
+          }
         }
         &.close {
+          
           .bar:nth-child(1) {
             transform: rotate(45deg);
             top: 0.7rem;
           }
           .bar:nth-child(2) {
-            display: none;
+            width: 0;
+            position: absolute;
           }
           .bar:nth-child(3) {
             transform: rotate(-45deg);

@@ -13,6 +13,7 @@
   top: 2.5rem;
   right: 2rem;
   display: none;
+  cursor: pointer;
 }
 .header .main_nav .ham_menu .bar {
   width: 100%;
@@ -380,12 +381,16 @@
   .header .main_nav .ham_menu .bar {
     transition: 0.5s ease-in-out;
   }
+  .header .main_nav .ham_menu .bar:nth-child(2) {
+    width: 100%;
+  }
   .header .main_nav .ham_menu.close .bar:nth-child(1) {
     transform: rotate(45deg);
     top: 0.7rem;
   }
   .header .main_nav .ham_menu.close .bar:nth-child(2) {
-    display: none;
+    width: 0;
+    position: absolute;
   }
   .header .main_nav .ham_menu.close .bar:nth-child(3) {
     transform: rotate(-45deg);
